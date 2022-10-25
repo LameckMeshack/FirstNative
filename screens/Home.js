@@ -1,10 +1,14 @@
 import { useState } from "react";
-import { Text, SafeArea, FlatList } from "react-native";
+import { Text, SafeAreaView, FlatList } from "react-native";
+import { FocusedStatusBar } from "../components";
 
-
-import { COLORS,NFTData } from "../constants";
+import { COLORS, NFTData } from "../constants";
 function Home() {
-  return <Text>Home</Text>;
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <FocusedStatusBar backgroundColor={COLORS.primary} />
+    </SafeAreaView>
+  );
 }
 
 export default Home;
